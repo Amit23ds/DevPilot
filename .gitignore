@@ -1,15 +1,11 @@
-# =====================================================================
-# DevPilot — universal .gitignore (covers backend/, client/, docker/)
-# =====================================================================
 
-### Secrets & local configuration ###
 .env
 .env.*
-.env*
 application.properties
 application.yml
 application.yaml
 !application-example.properties
+
 *.pem
 *.key
 *.p12
@@ -20,13 +16,9 @@ service-account*.json
 
 ### Java / Maven / Spring Boot ###
 target/
-!**/src/main/**/target/
-!**/src/test/**/target/
 build/
-!**/src/main/**/build/
-!**/src/test/**/build/
 *.class
-**/.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.jar
 /backend/HELP.md
 
 ### Logs ###
@@ -40,11 +32,11 @@ logs/
 *.ipr
 
 ### Eclipse / STS ###
-.apt_generated
+.apt_generated/
 .classpath
 .factorypath
 .project
-.settings
+.settings/
 .springBeans
 .sts4-cache
 
@@ -58,7 +50,7 @@ nbdist/
 ### VS Code ###
 .vscode/
 
-### Node / Next.js (client/) ###
+### Node / Next.js ###
 node_modules/
 .pnp
 .pnp.*
@@ -67,12 +59,16 @@ node_modules/
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
+
 .next/
 out/
-/client/coverage/
-.vercel
+coverage/
+.vercel/
+
 *.tsbuildinfo
 next-env.d.ts
+
+### Package manager logs ###
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
