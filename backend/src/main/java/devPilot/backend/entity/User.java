@@ -21,8 +21,9 @@ public class User {
     @Column(name="github_id", unique = true, nullable = false)
     private Long githubId;
 
-    @Column(name="github_username", nullable = false,length = 100)
-    private String githubName;
+    @Column(name = "github_username", nullable = false, length = 100)
+    private String githubUsername;
+
 
     @Column(name="display_name", nullable = false,length = 100)
     private String displayName;

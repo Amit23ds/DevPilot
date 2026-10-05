@@ -1,0 +1,96 @@
+# =====================================================================
+# DevPilot — universal .gitignore (covers backend/, client/, docker/)
+# =====================================================================
+
+### Secrets & local configuration ###
+.env
+.env.*
+.env*
+application.properties
+application.yml
+application.yaml
+!application-example.properties
+*.pem
+*.key
+*.p12
+*.jks
+credentials.json
+client_secret*.json
+service-account*.json
+
+### Java / Maven / Spring Boot ###
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+*.class
+**/.mvn/wrapper/maven-wrapper.jar
+/backend/HELP.md
+
+### Logs ###
+logs/
+*.log
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.iws
+*.ipr
+
+### Eclipse / STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### NetBeans ###
+nbproject/private/
+nbbuild/
+nbdist/
+.nb-gradle/
+/backend/dist/
+
+### VS Code ###
+.vscode/
+
+### Node / Next.js (client/) ###
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+.next/
+out/
+/client/coverage/
+.vercel
+*.tsbuildinfo
+next-env.d.ts
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-debug.log*
+
+### macOS / OS-generated ###
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+Thumbs.db
+ehthumbs.db
+desktop.ini
+
+### Temporary / editor files ###
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
